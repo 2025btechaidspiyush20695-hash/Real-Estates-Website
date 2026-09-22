@@ -1,11 +1,11 @@
 # 🌍 Gurukripa Estate — Deployment & Selling Guide
 
 Complete guide to put the website online with your own **domain + hosting**,
-keep it running 24×7, and safely **hand it over to the buyer**.
+keep it running 24×7, and safely **hand it over to the buyer** .
 
 ---
 
-## 1. What you are selling
+## 1.  What you are selling
 
 | Item | Details |
 |---|---|
