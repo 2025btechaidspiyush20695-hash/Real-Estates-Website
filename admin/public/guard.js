@@ -3,7 +3,8 @@
    White screen kabhi nahi: agar JS load/run fail ho to visible
    error panel dikhta hai, exact blocked URL ke saath.
    ============================================================ */
-(function () {
+(function () 
+ {
   window.__GURUKRIPA_VER__ = '2.3';
   var failed = [];
 
@@ -19,7 +20,8 @@
     failed.push('Promise: ' + String(e.reason || '').slice(0, 200));
   });
 
-  function showError(title, lines) {
+  function showError(title, lines) 
+  {
     var d = document.getElementById('root');
     if (d && d.innerHTML) return; // app rendered — no need
     document.title = 'Error — Gurukripa Estate';
@@ -37,7 +39,8 @@
       '</div></div>';
   }
 
-  setTimeout(function () {
+  setTimeout(function () 
+             {
     var d = document.getElementById('root');
     if (!d || !d.innerHTML) {
       showError('Oops! Kuch gadbad ho gayi', [
@@ -54,7 +57,8 @@
     }
   }, 6000);
 
-  window.addEventListener('load', function () {
+  window.addEventListener('load', function () 
+                          {
     console.log('%c🏠 Gurukripa Estate %cv2.3 — code loaded OK',
       'background:#0f4c43;color:#f2a43b;font-weight:bold;padding:3px 8px;border-radius:4px', 'color:#e8730f');
   });
